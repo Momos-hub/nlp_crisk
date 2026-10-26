@@ -1,0 +1,27 @@
+.insight-start { display:grid; gap:12px; margin-top:14px; }
+.copilot-log { min-height:170px; }
+.empty-chat { min-height:130px; padding:14px; }
+.insight-board { padding:15px; border:1px solid #dfe5ee; border-radius:12px; background:linear-gradient(125deg,#fff,#f6f8fb); box-shadow:0 8px 25px rgba(22,40,66,.045); }
+.insight-board-head { display:flex; align-items:flex-end; justify-content:space-between; gap:14px; margin-bottom:12px; }
+.insight-kicker { display:block; color:#526b93; font:750 .61rem var(--mono); letter-spacing:.12em; }
+.insight-board-head h3 { margin-top:5px; font-size:1.03rem; letter-spacing:-.025em; }
+.insight-caveat { color:var(--muted); font-size:.66rem; text-align:right; }
+.insight-grid { display:grid; grid-template-columns:1.35fr 1fr 1fr; gap:8px; }
+.insight-card { min-width:0; min-height:122px; display:flex; flex-direction:column; align-items:flex-start; gap:7px; padding:12px; border:1px solid #e2e7ef; border-radius:9px; background:#fff; text-align:left; }
+.insight-card:disabled { cursor:default; }
+.insight-primary { border-color:#d1deee; background:linear-gradient(145deg,#f2f7fc,#fff 80%); transition:border-color .18s,transform .18s,box-shadow .18s; }
+.insight-primary:not(:disabled):hover { transform:translateY(-2px); border-color:#95adce; box-shadow:0 8px 20px rgba(27,53,90,.09); }
+.insight-label { color:#718099; font:750 .57rem var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+.insight-card>b { color:#1c2c45; font-size:.88rem; line-height:1.25; }
+.insight-score { color:#9a5427; font:700 .64rem var(--mono); }
+.insight-card>small { display:-webkit-box; overflow:hidden; color:#66758a; font-size:.71rem; line-height:1.45; -webkit-line-clamp:3; -webkit-box-orient:vertical; }
+.insight-foot { margin-top:10px; color:#7b8798; font-size:.64rem; line-height:1.45; }
+.prompt-row { display:grid; gap:7px; }
+.prompt-row>span { color:#6d798d; font:700 .62rem var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+.prompt-row .ask-sugs { gap:6px; }
+.prompt-row .sug { border-radius:7px; padding:7px 10px; background:#fff; font-size:.72rem; text-align:left; }
+.model-capability-note { margin-top:12px; }
+.hf-hub-mark { display:grid; place-items:center; width:27px; height:27px; border-radius:8px; color:#315486; background:#edf3fb; font:800 .61rem var(--mono); letter-spacing:.03em; }
+.model-capability-note strong { color:#5c4712; }
+@media(max-width:760px) { .insight-grid { grid-template-columns:1fr 1fr; }.insight-primary { grid-column:1/-1; min-height:105px; } }
+@media(max-width:480px) { .insight-board { padding:12px; }.insight-board-head { align-items:flex-start; flex-direction:column; gap:5px; }.insight-caveat { text-align:left; }.insight-grid { grid-template-columns:1fr; }.insight-primary { grid-column:auto; }.insight-card { min-height:unset; }.prompt-row .ask-sugs { display:grid; grid-template-columns:1fr; } }

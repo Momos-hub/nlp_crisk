@@ -1,0 +1,5 @@
+# Optional local transformer models. Torch is a large install; install only when needed.
+-r requirements.txt
+transformers>=4.46.0
+torch>=2.5.0
+sentencepiece>=0.2.0
